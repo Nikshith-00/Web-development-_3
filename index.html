@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe | Nikshith Jampala</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="logo" href="#home">NIKSHITH<span>.</span></a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#game">Game</a>
+      <a href="#about">About</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div>
+        <p class="eyebrow">TASK 03 • WEB APPLICATION</p>
+        <h1>Three in a row.<br><span>One winner.</span></h1>
+        <p>
+          A responsive Tic-Tac-Toe game built with HTML, CSS and JavaScript.
+          Play with a friend or challenge the computer.
+        </p>
+        <a class="hero-button" href="#game">Play Now ↓</a>
+      </div>
+    </section>
+
+    <section class="game-section" id="game">
+      <div class="game-card">
+        <div class="game-header">
+          <div>
+            <p class="eyebrow">TIC-TAC-TOE</p>
+            <h2>Game <span>Board</span></h2>
+          </div>
+          <div class="mode-switch">
+            <button class="mode active" data-mode="ai">Vs Computer</button>
+            <button class="mode" data-mode="two">Two Players</button>
+          </div>
+        </div>
+
+        <div class="scoreboard">
+          <div><span>❌ You</span><strong id="xScore">0</strong></div>
+          <div><span>Draws</span><strong id="drawScore">0</strong></div>
+          <div><span>⭕ Opponent</span><strong id="oScore">0</strong></div>
+        </div>
+
+        <p class="status" id="status">Your turn — X</p>
+
+        <div class="board" id="board" aria-label="Tic-Tac-Toe board">
+          <button class="cell" data-index="0" aria-label="Cell 1"></button>
+          <button class="cell" data-index="1" aria-label="Cell 2"></button>
+          <button class="cell" data-index="2" aria-label="Cell 3"></button>
+          <button class="cell" data-index="3" aria-label="Cell 4"></button>
+          <button class="cell" data-index="4" aria-label="Cell 5"></button>
+          <button class="cell" data-index="5" aria-label="Cell 6"></button>
+          <button class="cell" data-index="6" aria-label="Cell 7"></button>
+          <button class="cell" data-index="7" aria-label="Cell 8"></button>
+          <button class="cell" data-index="8" aria-label="Cell 9"></button>
+        </div>
+
+        <button class="reset-button" id="resetBtn">↻ New Game</button>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div>
+        <p class="eyebrow">PROJECT</p>
+        <h2>Built by <span>Nikshith Jampala</span></h2>
+        <p>
+          This project demonstrates DOM manipulation, event handling, game
+          state management and winning-condition logic using JavaScript.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Nikshith Jampala</span>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
